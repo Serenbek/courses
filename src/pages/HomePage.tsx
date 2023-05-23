@@ -6,11 +6,6 @@ const HomePage = () => {
   return (
     <>
       <h1>Home Page</h1>
-      <br />
-      <h2>{t("welcome.welcome1")}</h2>
-      <br />
-      <h3>{t("hello.hello1")}</h3>
-      <Test/>
     </>
   );
 };
