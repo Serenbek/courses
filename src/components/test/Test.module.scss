@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  p {
+    color: $mainTextLight;
+    margin: 25px 0;
+  }
+  .test__main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  
+}

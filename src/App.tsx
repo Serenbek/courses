@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import HomePage from "./pages/HomePage";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -10,7 +10,6 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
 function App() {
-  const { t } = useTranslation();
   return (
     <>
       <BrowserRouter>
