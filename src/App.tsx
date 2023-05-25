@@ -1,6 +1,5 @@
 import "./App.scss";
 import HomePage from "./pages/HomePage";
-import { useTranslation } from "react-i18next";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ListPage from "./pages/ListPage";
 import DetailsPage from "./pages/DetailsPage";
@@ -8,11 +7,13 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+       <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/listPage" element={<ListPage />} />
