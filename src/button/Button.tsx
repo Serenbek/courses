@@ -22,7 +22,7 @@ const CustomButton: React.FC<LabeledValue> = ({
       <Typography  >
         {text}
       </Typography>
-      <img className={styles.button__vector} src={vector} alt="" />
+      <img className={styles.button__vector} src={vector} alt={vector} />
     </button> 
   );
 };
