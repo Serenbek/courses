@@ -10,10 +10,9 @@ const HomePage = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Main />
-      <RegisterNow />
       <Header />
       <Main />
+      <RegisterNow />
     </>
   );
 };
