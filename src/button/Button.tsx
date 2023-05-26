@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./Button.module.scss";
 import { Typography } from "@mui/material";
-import Image from "react";
-import { useTranslation } from "react-i18next";
 
 interface LabeledValue {
   imagebtn?: string;

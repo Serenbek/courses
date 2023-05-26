@@ -8,6 +8,10 @@
     height: 100%;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
   .main__left {
     width: 34%;
@@ -108,9 +112,6 @@
 @media (max-width: 576px) {
   .main {
     height: 759px;
-  }
-  .main__right {
-    display: none;
   }
   .main__left {
     width: 100% !important;
