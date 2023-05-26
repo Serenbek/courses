@@ -1,4 +1,18 @@
 {
+  "header": {
+    "home": "Home",
+    "components": "Components",
+    "pages": "Pages",
+    "list": "List",
+    "details": "Details",
+    "blog": "Blog",
+    "blogDetails": "Blog Details",
+    "about": "About",
+    "contact": "Contacts",
+    "documentation": "Documentation",
+    "login": "Login",
+    "join": "Join Us"
+  },
   "welcome": {
     "welcome1": "Welcome"
   },
