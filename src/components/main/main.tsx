@@ -43,9 +43,9 @@ const Main = () => {
             </Typography>
           </div>
           <div className={styles.left__ready}>
-            <CustomButton vector={vector} text="Ready Start" />
+            <CustomButton vector={vector} text="Ready Start"  />
             <div className={styles.left__watch}>
-              <img className={styles.fab} src={fab} alt="fab" />
+              <img className={styles.fab} src={fab} alt="icon__player" />
               <Typography variant="subtitle1" component="b">
                 {t("main.watch")}
               </Typography>
@@ -55,7 +55,7 @@ const Main = () => {
           <div className={styles.left__results}>{renderText}</div>
         </div>
         <div className={styles.main__right}>
-          <img src={bg} alt="bg" />
+          <img src={bg} alt="icon__background" />
         </div>
       </div>
     </div>
