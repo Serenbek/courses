@@ -11,8 +11,8 @@ const Main = () => {
   const { t } = useTranslation();
   const renderText = useMemo(
     () =>
-      maincardssarr.map((item) => (
-        <div className={styles.jobs}>
+      maincardssarr.map((item, index) => (
+        <div className={styles.jobs} key={`${item.title}_${index}`}>
           <Typography variant="h4">{t(item.title)}</Typography>
           <Typography variant="subtitle1" component="p">
             {t(item.date)}
@@ -24,7 +24,14 @@ const Main = () => {
 
   return (
     <div className={styles.main}>
-      <div className="container" style={{ display: "flex", gap: "24px" }}>
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          gap: "24px",
+          justifyContent: "space-between",
+        }}
+      >
         <div className={styles.main__left}>
           <div className={styles.left__paragraph}>
             <Typography variant="h1">{t("main.free")}</Typography>
@@ -43,7 +50,7 @@ const Main = () => {
             </Typography>
           </div>
           <div className={styles.left__ready}>
-            <CustomButton vector={vector} text="Ready Start"  />
+            <CustomButton vector={vector} text="Ready Start" />
             <div className={styles.left__watch}>
               <img className={styles.fab} src={fab} alt="icon__player" />
               <Typography variant="subtitle1" component="b">

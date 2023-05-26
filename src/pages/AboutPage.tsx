@@ -1,10 +1,11 @@
+import Header from "../components/header/header";
 import Main from "../components/main/main";
 
 const AboutPage = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 

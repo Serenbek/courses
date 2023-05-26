@@ -1,9 +1,10 @@
+import Header from "../components/header/header";
 
 const BlogPage = () => {
   return (
-    <div>
-      <h1>Blog Page</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 

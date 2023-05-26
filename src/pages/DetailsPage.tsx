@@ -1,9 +1,10 @@
+import Header from "../components/header/header";
 
 const DetailsPage = () => {
   return (
-    <div>
-      <h1>Details Page</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
