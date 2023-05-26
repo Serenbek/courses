@@ -14,9 +14,7 @@ import Button from "@mui/material/Button";
 import burgerMenu from "../../assets/images/header/headerBurgerMenu.svg";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
-import whiteMap from "../../assets/images/header/headerWhiteMap.svg";
-import whiteSearch from "../../assets/images/header/headerWhiteSearch.svg";
+import { useState } from "react";
 
 interface LanguageData {
   nativName: string;
