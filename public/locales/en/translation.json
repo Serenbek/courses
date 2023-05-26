@@ -12,5 +12,16 @@
     "documentation": "Documentation",
     "login": "Login",
     "join": "Join Us"
+  },
+  "main": {
+    "free": "Free",
+    "online": "Online",
+    "courses": "Courses",
+    "from": "From",
+    "expert": "The Experts",
+    "learn": "Learners",
+    "graduates": "Graduates",
+    "watch": "Watch Video",
+    "ready": "Ready Start"
   }
 }
