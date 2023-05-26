@@ -14,7 +14,7 @@ import Button from "@mui/material/Button";
 import burgerMenu from "../../assets/images/header/headerBurgerMenu.svg";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import whiteMap from "../../assets/images/header/headerWhiteMap.svg";
 import whiteSearch from "../../assets/images/header/headerWhiteSearch.svg";
 
@@ -31,7 +31,6 @@ function Header() {
   const { i18n, t } = useTranslation();
 
   const [lng, setLng] = useState<boolean>(false);
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   const handleLngClose = (): void => {
     setLng((prev: boolean) => !prev);
@@ -102,7 +101,7 @@ function Header() {
   }));
 
   return (
-    <nav className={`${scss.nav} ${isScrolled ? `${scss.scrolled}` : ""}`}>
+    <nav className={scss.nav}>
       <div className={scss.wrapper + " container"}>
         <div className={scss.navMenu}>
           <img className={scss.menuLogo} src={logo} alt="logo" />
@@ -135,16 +134,16 @@ function Header() {
             <FormControlLabel
               control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
               label=""
+              className={scss.darkMode}
             />
           </FormGroup>
-          <img
-            className={scss.headerSearch}
-            src={isScrolled ? whiteSearch : search}
-            alt="serach-icon"
-          />
+          <div className={scss.burgerMenu}>
+            <img src={burgerMenu} alt="burgerMenu" />
+          </div>
+          <img className={scss.headerSearch} src={search} alt="serach-icon" />
           <img
             className={scss.iconMap}
-            src={isScrolled ? whiteMap : map}
+            src={map}
             alt="map-icon"
             onClick={handleLngClose}
           />
@@ -168,9 +167,6 @@ function Header() {
             <OneButton variant="text">{t("header.login")}</OneButton>
             <ToButton>{t("header.join")}</ToButton>
           </Stack>
-          <div className={scss.burgerMenu}>
-            <img src={burgerMenu} alt="burgerMenu" />
-          </div>
         </div>
       </div>
     </nav>
