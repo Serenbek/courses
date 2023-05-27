@@ -23,5 +23,9 @@
     "graduates": "Graduates",
     "watch": "Watch Video",
     "ready": "Ready Start"
+  },
+  "register":{
+    "registerNow": "Register Now Forget 20% Discount Every Courses",
+    "button": "Register"
   }
 }
