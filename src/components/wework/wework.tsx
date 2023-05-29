@@ -15,7 +15,7 @@ const WeWork = () => {
       )),
     [t]
   );
-  const renderImg2 = useMemo(
+  const renderImgMobile = useMemo(
     () =>
       WorkArr.slice(0, 2).map((item, index) => (
         <div className={styles.card} key={`${item.img}_${index}`}>
@@ -34,7 +34,7 @@ const WeWork = () => {
           </Typography>
         </div>
         <div className={styles.work__icons}>{renderImg}</div>
-        <div className={styles.work__icons2}>{renderImg2}</div>
+        <div className={styles.work__icons__mobile}>{renderImgMobile}</div>
       </div>
     </div>
   );
