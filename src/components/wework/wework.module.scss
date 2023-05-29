@@ -2,26 +2,26 @@
 .work {
   width: 100%;
   height: 372px;
-  .paragraph {
+  .work__paragraph {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     gap: 24px;
     h1 {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 64px;
-      color: $mainTextDark;
-    }
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      color: $mainTextDMLight;
-    }
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: $mainTextDark;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $mainTextDMLight;
+      }
   }
   .work__icons {
     display: flex;
@@ -33,8 +33,7 @@
 @media (max-width: 576px) {
   .work {
     overflow-x: hidden;
-
-    .paragraph {
+    .work__paragraph {
       p {
         font-style: normal;
         font-weight: 400;
