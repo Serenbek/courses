@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./wework.module.scss";
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
@@ -13,7 +12,7 @@ const WeWork = () => {
           <img src={item.img} alt="work__icons" />
         </div>
       )),
-    [t]
+    []
   );
   const renderImgMobile = useMemo(
     () =>
@@ -22,7 +21,7 @@ const WeWork = () => {
           <img src={item.img} alt="work__icons" />
         </div>
       )),
-    [t]
+    []
   );
   return (
     <div className={styles.work}>
