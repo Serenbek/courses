@@ -10,7 +10,7 @@ const WeWork = () => {
     () =>
       WorkArr.map((item) => (
         <div className={styles.card}>
-          <img src={item.img} alt="" />
+          <img src={item.img} alt="work__icons" />
         </div>
       )),
     [t]
