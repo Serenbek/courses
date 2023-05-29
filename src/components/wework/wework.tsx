@@ -34,7 +34,7 @@ const WeWork = () => {
           </Typography>
         </div>
         <div className={styles.work__icons}>{renderImg}</div>
-        <div className={styles.work__icons__mobile}>{renderImgMobile}</div>
+        <div className={styles.work__icons_mobile}>{renderImgMobile}</div>
       </div>
     </div>
   );
