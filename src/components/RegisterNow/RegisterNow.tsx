@@ -15,9 +15,9 @@ function RegisterNow() {
             Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
             Sed magna purus, fermentum eu
           </Typography>
-          <div className={scss.in}>
-            <input type="email" placeholder="Enter your email" />
-            <button>{t("register.button")}</button>
+          <div className={scss.form}>
+            <input type="email" placeholder="Enter your email"/>
+            <span><button>{t("register.button")}</button></span>
           </div>
         </div>
         <div className={scss.right}>

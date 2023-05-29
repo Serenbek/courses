@@ -32,7 +32,7 @@
       width: 368px;
     }
 
-    .in {
+    .form {
       margin-top: 40px;
       margin-left: 25px;
       input {
@@ -41,21 +41,25 @@
         background: #ffffff;
         border-radius: 8px;
         padding-left: 12px;
+        background: #FFFFFF;
       }
 
-      button {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 26px;
-        position: relative;
-        bottom: 50px;
-        left: 175px;
-        color: white;
-        width: 107px;
-        height: 44px;
-        background: #fa541c;
-        border-radius: 8px;
-        cursor: pointer;
+      span{
+        margin-right: 55px;
+        button {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 26px;
+          position: relative;
+          bottom: 50px;
+          left: 200px;
+          color: white;
+          width: 107px;
+          height: 44px;
+          background: #fa541c;
+          border-radius: 8px;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -72,13 +76,15 @@
         width: 250px;
       }
 
-      .in {
+      .form {
         margin-top: 60px;
         input {
           width: 320px;
         }
-        button {
-          left: 100px;
+        span{
+          button {
+            left: 125px;
+          }
         }
       }
     }
@@ -120,14 +126,16 @@
         line-height: 28px;
       }
 
-      .in {
+      .form {
         margin-left: 5px;
         input {
           width: 335px;
           height: 56px;
         }
-        button {
-          left: 110px;
+        span{
+          button {
+            left: 135px;
+          }
         }
       }
     }
