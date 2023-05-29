@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+.work {
+  width: 100%;
+  height: 372px;
+  .work__paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      color: $mainTextDark;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $mainTextDMLight;
+    }
+  }
+  .work__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 64px;
+  }
+  .work__icons_mobile {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .work {
+    .work__paragraph {
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        width: 70%;
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+      }
+    }
+    .work__icons {
+      display: none;
+    }
+    .work__icons_mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 51px;
+      gap: 100px;
+    }
+  }
+}
