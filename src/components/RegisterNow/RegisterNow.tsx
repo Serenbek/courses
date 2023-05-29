@@ -1,24 +1,27 @@
-import React from "react";
 import scss from "./RegisterNow.module.scss";
-import img_email from "../../assets/register/Asset 1 2.svg";
+import img_email from "../../assets/images/main/Asset 1 2.svg";
+import Typography from "@mui/material/Typography/Typography";
+import { useTranslation } from "react-i18next";
 
 function RegisterNow() {
+  const { t } = useTranslation();
+
   return (
-    <div className={scss.container}>
+    <div className="container">
       <div className={scss.wrapper}>
         <div className={scss.left}>
-          <h1>Register Now Forget 20% Discount Every Courses</h1>
-          <p>
+          <Typography variant="h3">{t("register.registerNow")}</Typography>
+          <Typography variant="subtitle1" component="p">
             Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
             Sed magna purus, fermentum eu
-          </p>
-          <div className={scss.in}>
+          </Typography>
+          <div className={scss.form}>
             <input type="email" placeholder="Enter your email"/>
-            <button>Register</button>
+            <span><button>{t("register.button")}</button></span>
           </div>
         </div>
         <div className={scss.right}>
-          <img src={img_email} alt="" />
+          <img src={img_email} alt="email_photo" />
         </div>
       </div>
     </div>
