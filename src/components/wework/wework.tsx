@@ -8,8 +8,17 @@ const WeWork = () => {
   const { t } = useTranslation();
   const renderImg = useMemo(
     () =>
-      WorkArr.map((item) => (
-        <div className={styles.card}>
+      WorkArr.map((item, index) => (
+        <div className={styles.card} key={`${item.img}_${index}`}>
+          <img src={item.img} alt="work__icons" />
+        </div>
+      )),
+    [t]
+  );
+  const renderImg2 = useMemo(
+    () =>
+      WorkArr.slice(0, 2).map((item, index) => (
+        <div className={styles.card} key={`${item.img}_${index}`}>
           <img src={item.img} alt="work__icons" />
         </div>
       )),
@@ -25,6 +34,7 @@ const WeWork = () => {
           </Typography>
         </div>
         <div className={styles.work__icons}>{renderImg}</div>
+        <div className={styles.work__icons2}>{renderImg2}</div>
       </div>
     </div>
   );

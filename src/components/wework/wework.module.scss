@@ -9,25 +9,28 @@
     align-items: center;
     gap: 24px;
     h1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        color: $mainTextDark;
-      }
-      p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: $mainTextDMLight;
-      }
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      color: $mainTextDark;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $mainTextDMLight;
+    }
   }
   .work__icons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 64px;
+  }
+  .work__icons2 {
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -49,13 +52,14 @@
       }
     }
     .work__icons {
-      width: 20%;
+      display: none;
+    }
+    .work__icons2 {
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-evenly;
-      margin-top: 64px;
-      padding-left: 495px;
-      gap: 50px;
+      margin-top: 51px;
+      gap: 100px;
     }
   }
 }
