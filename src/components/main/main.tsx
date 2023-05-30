@@ -34,13 +34,12 @@ const Main = () => {
       >
         <div className={styles.main__left}>
           <div className={styles.left__paragraph}>
-            <Typography variant="h1">{t("main.free")}</Typography>
-            <Typography variant="h2">{t("main.online")}</Typography>
-            <Typography variant="subtitle1" component="a">
-              {t("main.courses")}
+            <Typography variant="h1">
+              {t("main.free")}{" "}
+              <span className={styles.online}>{t("main.online")}</span>{" "}
+              <span className={styles.courses}>{t("main.courses")}</span>{" "}
+              {t("main.from")}
             </Typography>
-            <Typography variant="h1">{t("main.from")} </Typography>
-            <Typography variant="h1"> {t("main.expert")}</Typography>
           </div>
           <div className={styles.left__subtitle}>
             <Typography variant="subtitle1" component="p">

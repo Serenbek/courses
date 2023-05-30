@@ -22,8 +22,8 @@ interface LanguageData {
 
 function Header() {
   const lngs: Record<string, LanguageData> = {
-    en: { nativName: "English" },
-    ru: { nativName: "Russian" },
+    en: { nativName: "En" },
+    ru: { nativName: "Рус" },
   };
 
   const { i18n, t } = useTranslation();
