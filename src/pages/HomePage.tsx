@@ -3,6 +3,7 @@ import RegisterNow from "../components/RegisterNow/RegisterNow";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import WeWork from "../components/wework/wework";
+import ThirdBlock from "../components/thirdBlock/thirdBlock";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <Main />
       <WeWork />
+      <ThirdBlock />
       <RegisterNow />
       <Footer />
     </>

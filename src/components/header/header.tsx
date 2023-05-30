@@ -133,11 +133,11 @@ function Header() {
           />
           {lng && (
             <div className={scss.lngBtns} onClick={handleLngClose}>
-              {Object.keys(lngs).map((lng) => (
+              {Object.keys(lngs).map((lng, index) => (
                 <Button
                   className={scss.lngBtn}
                   type="submit"
-                  key={lng}
+                  key={`${lng}_${index}`}
                   onClick={() => i18n.changeLanguage(lng)}
                   disabled={i18n.resolvedLanguage === lng}
                 >
