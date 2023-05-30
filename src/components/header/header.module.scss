@@ -14,6 +14,18 @@
     justify-content: space-between;
     align-items: center;
     width: 600px;
+    .menuLink {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $mainTextLight;
+      cursor: pointer;
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
 
     @media (max-width: 576px) {
       width: 500px;
@@ -24,14 +36,10 @@
     }
   }
 
-  .dropBtn {
-    color: $mainTextLight;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    cursor: pointer;
+  .menuLink:hover {
+    color: $mainTextDark;
   }
+
   .dropDown {
     position: relative;
     display: inline-block;
@@ -41,14 +49,36 @@
       display: none;
     }
   }
+
+  .dropDown:hover .content {
+    display: block;
+  }
+
+  .dropBtn {
+    color: $mainTextLight;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dropBtn:hover {
+    color: $mainTextDark;
+  }
+
   .content {
     display: none;
     position: absolute;
     background-color: transparent;
-    width: 160px;
+    text-align: center;
+    width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
     border-radius: 8px;
+    right: 25px;
+    left: -45px;
     a {
       color: $black;
       padding: 12px 16px;
@@ -63,20 +93,13 @@
     }
   }
 
-  .dropDown:hover .content {
-    display: block;
-  }
-
-  .dropBtn:hover {
-    color: $mainTextDark;
-  }
-
   .menuSign {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 394px;
     position: relative;
+    gap: 15px;
 
     @media (max-width: 576px) {
       width: 160px;
@@ -91,6 +114,24 @@
     @media (max-width: 576px) {
       display: none;
     }
+  }
+
+  .burgerMenu {
+    display: none;
+
+    @media (max-width: 576px) {
+      display: block;
+      cursor: pointer;
+      margin-top: 1px;
+
+      .dropDown:hover .content {
+        display: block;
+      }
+    }
+  }
+
+  .headerSearch {
+    cursor: pointer;
   }
 
   .iconMap {
@@ -114,22 +155,19 @@
     background: none;
   }
 
-  .divider {
+  .lngBtn {
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    text-transform: none;
+    border-radius: 10px;
+
     @media (max-width: 576px) {
       display: none;
     }
   }
 
-  .headerSearch {
-    cursor: pointer;
-  }
-
-  .lngBtn {
-    border: none;
-    cursor: pointer;
-    height: 30px;
-    border-radius: 10px;
-
+  .divider {
     @media (max-width: 576px) {
       display: none;
     }
@@ -141,34 +179,31 @@
     }
   }
 
-  .menuLink {
-    font-style: normal;
+  .loginBtn {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    color: $mainTextLight;
-    cursor: pointer;
-
-    @media (max-width: 576px) {
-      display: none;
-    }
-  }
-
-  .menuLink:hover {
     color: $mainTextDark;
+    text-transform: none;
   }
 
-  .burgerMenu {
-    display: none;
+  .joinBtn {
+    align-items: center;
+    padding: 6px 16px;
+    height: 36px;
+    background: $mainTextDark;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $white;
+    text-transform: none;
+  }
 
-    @media (max-width: 576px) {
-      display: block;
-      cursor: pointer;
-      margin-top: 1px;
-
-      .dropDown:hover .content {
-        display: block;
-      }
-    }
+  .joinBtn:hover {
+    color: $mainTextDark;
+    background-color: $mainTextDMLight;
   }
 }

@@ -23,5 +23,12 @@
     "graduates": "Graduates",
     "watch": "Watch Video",
     "ready": "Ready Start"
+  },
+  "footer": {
+    "bigText": " The starting point for your next project based on  easy-to-customize Material-UI © helps you build apps faster and  better.",
+    "emailAddress": "Email address",
+    "rightsReserved": "© 2021. All rights reserved",
+    "helpCenter": "Help Center",
+    "termsService": "Terms of Service"
   }
 }

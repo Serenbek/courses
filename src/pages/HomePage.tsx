@@ -1,7 +1,7 @@
 import Main from "../components/main/main";
 import RegisterNow from "../components/RegisterNow/RegisterNow";
 import Header from "../components/header/header";
-
+import Footer from "../components/footer/footer";
 
 const HomePage = () => {
   return (
@@ -9,6 +9,7 @@ const HomePage = () => {
       <Header />
       <Main />
       <RegisterNow />
+      <Footer />
     </>
   );
 };
