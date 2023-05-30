@@ -20,6 +20,10 @@
       line-height: 54px;
       margin-bottom: 20px;
       margin-top: 40px;
+      @media (max-width: 576px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
     }
     p {
       width: 415px;
@@ -41,10 +45,10 @@
         background: #ffffff;
         border-radius: 8px;
         padding-left: 12px;
-        background: #FFFFFF;
+        background: #ffffff;
       }
 
-      span{
+      span {
         margin-right: 55px;
         button {
           font-weight: 600;
@@ -81,7 +85,7 @@
         input {
           width: 320px;
         }
-        span{
+        span {
           button {
             left: 125px;
           }
@@ -97,7 +101,7 @@
 }
 
 @media (max-width: 576px) {
-  .container{
+  .container {
     width: 110%;
   }
   .wrapper {
@@ -132,7 +136,7 @@
           width: 335px;
           height: 56px;
         }
-        span{
+        span {
           button {
             left: 135px;
           }
