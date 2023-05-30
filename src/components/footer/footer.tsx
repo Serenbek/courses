@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import email from "../../assets/images/footer/footerEmail.svg";
 import location from "../../assets/images/footer/footerLocation.svg";
 import { useTranslation } from "react-i18next";
+import Typography from "@mui/material/Typography";
 
 function Footer() {
   const { t } = useTranslation();
@@ -17,11 +18,20 @@ function Footer() {
         <div className={scss.footer__wrapper}>
           <div className={scss.footer__zone}>
             <img src={logo} alt="Logo" />
-            <div className={scss.footer__zone__desc}>{t("footer.bigText")}</div>
+            <Typography
+              variant="body2"
+              gutterBottom
+              className={scss.footer__zone__desc}
+            >
+              {t("footer.bigText")}
+            </Typography>
             <div className={scss.social__wrapper}>
               <div className={scss.social__wrapper}>
-                {socialData.map((item) => (
-                  <div key={item.url} className={scss.social_wrapper}>
+                {socialData.map((item, index) => (
+                  <div
+                    className={scss.social_wrapper}
+                    key={`${item.url}_${index}`}
+                  >
                     <Link to={item.url} target="_blank">
                       <img src={item.img} alt="Social" />
                     </Link>
@@ -35,16 +45,13 @@ function Footer() {
               <Link to="https://example.com/">
                 <img src={email} alt="email" />
               </Link>
-              <Link to="https://example.com/"> &nbsp; info@example.com </Link>
+              <Link to="https://example.com/"> info@example.com </Link>
             </div>
             <div className={scss.get__email}>
               <Link to="mailto:Hello@agency.com">
                 <img src={location} alt="location" />
               </Link>
-              <Link to="mailto:Hello@agency.com">
-                {" "}
-                &nbsp; 655 Schaefer Dale
-              </Link>
+              <Link to="mailto:Hello@agency.com"> 655 Schaefer Dale</Link>
             </div>
           </div>
           <div className={scss.footer__email}>
@@ -59,16 +66,28 @@ function Footer() {
           </div>
         </div>
         <div className={scss.footer__text__end}>
-          <div className={scss.footer__left__text}>
+          <Typography
+            variant="body2"
+            gutterBottom
+            className={scss.footer__left__text}
+          >
             {t("footer.rightsReserved")}
-          </div>
+          </Typography>
           <div className={scss.footer__right__wrapper}>
-            <div className={scss.footer__rights__text}>
+            <Typography
+              variant="body2"
+              gutterBottom
+              className={scss.footer__rights__text}
+            >
               {t("footer.helpCenter")}
-            </div>
-            <div className={scss.footer__rights__text}>
+            </Typography>
+            <Typography
+              variant="body2"
+              gutterBottom
+              className={scss.footer__rights__text}
+            >
               {t("footer.termsService")}
-            </div>
+            </Typography>
           </div>
         </div>
       </div>
