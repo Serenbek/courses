@@ -34,22 +34,6 @@ function Header() {
     setLng((prev: boolean) => !prev);
   };
 
-  const OneButton = styled(Button)({
-    border: 0,
-    color: "black",
-    textTransform: "none",
-  });
-
-  const ToButton = styled(Button)({
-    backgroundColor: "#212b36",
-    border: "1px solid #212b36",
-    borderRadius: 10,
-    color: "white",
-    height: 40,
-    padding: "0 25px",
-    textTransform: "none",
-  });
-
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
     height: 34,
@@ -102,14 +86,16 @@ function Header() {
     <nav className={scss.nav}>
       <div className={scss.wrapper + " container"}>
         <div className={scss.navMenu}>
-          <img className={scss.menuLogo} src={logo} alt="logo" />
+          <Link to="/">
+            <img className={scss.menuLogo} src={logo} alt="logo" />
+          </Link>
           <Link className={scss.menuLink} to="/">
             {t("header.home")}
           </Link>
           <Link className={scss.menuLink} to="/">
             {t("header.components")}
           </Link>
-          <button className={scss.dropDown}>
+          <div className={scss.dropDown}>
             <div className={scss.dropBtn}>
               {t("header.pages")} <img src={headerArrow} alt="headerArrow" />
             </div>
@@ -122,7 +108,7 @@ function Header() {
               <Link to="/aboutPage">{t("header.about")}</Link>
               <Link to="/contactPage">{t("header.contact")}</Link>
             </div>
-          </button>
+          </div>
           <Link className={scss.menuLink} to="/">
             {t("header.documentation")}
           </Link>
@@ -148,7 +134,7 @@ function Header() {
           {lng && (
             <div className={scss.lngBtns} onClick={handleLngClose}>
               {Object.keys(lngs).map((lng) => (
-                <button
+                <Button
                   className={scss.lngBtn}
                   type="submit"
                   key={lng}
@@ -156,14 +142,16 @@ function Header() {
                   disabled={i18n.resolvedLanguage === lng}
                 >
                   {lngs[lng].nativName}
-                </button>
+                </Button>
               ))}
             </div>
           )}
           <img className={scss.divider} src={divider} alt="divider" />
-          <Stack spacing={1} direction="row">
-            <OneButton variant="text">{t("header.login")}</OneButton>
-            <ToButton>{t("header.join")}</ToButton>
+          <Stack spacing={2} direction="row">
+            <Button variant="text" className={scss.loginBtn}>
+              {t("header.login")}
+            </Button>
+            <Button className={scss.joinBtn}>{t("header.join")}</Button>
           </Stack>
         </div>
       </div>
