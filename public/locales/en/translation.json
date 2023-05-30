@@ -26,6 +26,12 @@
   "work": {
     "title": "We Work With"
   },
+  "app": {
+    "downloadApp": "Download App",
+    "scanQR": "Scan QR code to install on your device",
+    "downloadOn": "Download on the",
+    "downloadFrom": "Download from"
+  },
   "register": {
     "registerNow": "Register Now Forget 20% Discount Every Courses",
     "button": "Register"
