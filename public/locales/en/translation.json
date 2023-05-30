@@ -24,6 +24,13 @@
     "watch": "Watch Video",
     "ready": "Ready Start"
   },
+  "work": {
+    "title": "We Work With"
+  },
+  "register": {
+    "registerNow": "Register Now Forget 20% Discount Every Courses",
+    "button": "Register"
+  },
   "footer": {
     "bigText": " The starting point for your next project based on  easy-to-customize Material-UI © helps you build apps faster and  better.",
     "emailAddress": "Email address",

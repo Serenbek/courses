@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import styles from "./main.module.scss";
 import Typography from "@mui/material/Typography/Typography";
-import CustomButton from "../../button/Button";
+import CustomButton from "../button/Button";
 import bg from "../../assets/images/main/main1.png";
 import vector from "../../assets/images/main/OVERLAY COLOR11.svg";
 import fab from "../../assets/images/main/Fab.svg";
