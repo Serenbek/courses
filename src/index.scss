@@ -40,6 +40,13 @@ a {
   width: 85%;
   margin: 0 auto;
 }
+.flex{
+  display: flex;
+  align-items: center;
+}
+button{
+  cursor: pointer;
+}
 
 @media (max-width: 912px) {
   .container {
