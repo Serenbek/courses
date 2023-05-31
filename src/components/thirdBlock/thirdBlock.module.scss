@@ -1,0 +1,142 @@
+@import "../../styles//variables.scss";
+
+.third {
+  overflow: hidden;
+
+  .third__wrapper {
+    padding-bottom: 120px;
+
+    @media (max-width: 576px) {
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: 375px) {
+      padding-bottom: 100px;
+    }
+  }
+
+  .third__text__orange {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $orangered;
+    margin-bottom: 80px;
+
+    @media (max-width: 576px) {
+      margin-top: 0;
+      margin-bottom: 50px;
+      padding-left: 15px;
+    }
+
+    @media (max-width: 375px) {
+      margin-top: 65px;
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+  }
+
+  .third__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+  }
+
+  .third__left {
+    @media (max-width: 576px) {
+      display: none;
+    }
+
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  .right__title {
+    width: 564px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 54px;
+    color: $mainTextDark;
+
+    @media (max-width: 576px) {
+      width: 354px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @media (max-width: 375px) {
+      width: 354px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .right__content__text {
+    width: 505px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $mainTextLight;
+    margin-top: 20px;
+
+    @media (max-width: 576px) {
+      width: 350px;
+      line-height: 28px;
+    }
+
+    @media (max-width: 375px) {
+      width: 350px;
+      line-height: 28px;
+    }
+  }
+
+  .third__right__wrapper {
+    width: 485px;
+    display: flex;
+    gap: 115px;
+    margin-top: 80px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      width: 335px;
+      gap: 10px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+      width: 335px;
+      gap: 10px;
+      margin-top: 60px;
+    }
+  }
+
+  .content__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: $mainTextLight;
+    margin-top: 20px;
+
+    @media (max-width: 576px) {
+      width: 335px;
+    }
+
+    @media (max-width: 375px) {
+      width: 335px;
+    }
+  }
+}

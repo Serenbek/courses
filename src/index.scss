@@ -50,12 +50,14 @@ button{
 
 @media (max-width: 912px) {
   .container {
-    width: 90%;
+    width: 88%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
   }
 }

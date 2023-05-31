@@ -1,0 +1,226 @@
+@import "../../styles/variables.scss";
+
+.down__app {
+  overflow: hidden;
+  padding: 100px 0;
+
+  @media (max-width: 576px) {
+    padding: 50px 0 100px 0;
+  }
+
+  @media (max-width: 375px) {
+    padding: 50px 0 100px 0;
+  }
+  .down__app__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+  }
+
+  .left__title__app {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: $mainTextDark;
+    margin-bottom: 25px;
+
+    @media (max-width: 576px) {
+      text-align: center;
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 375px) {
+      text-align: center;
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  .left__text__app {
+    width: 430px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $mainTextLight;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      width: 98%;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      width: 350px;
+    }
+  }
+
+  .qr__wrapper {
+    border: 1px solid rgba(145, 158, 171, 0.24);
+    border-radius: 16px;
+    margin-top: 80px;
+    padding: 40px;
+
+    @media (max-width: 576px) {
+      padding: 20px;
+    }
+
+    @media (max-width: 375px) {
+      padding: 25px;
+    }
+  }
+
+  .left__qr__app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (max-width: 576px) {
+      gap: 15px;
+    }
+
+    @media (max-width: 375px) {
+      gap: 15px;
+    }
+  }
+
+  .qr__text {
+    width: 188px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $mainTextDark;
+
+    @media (max-width: 576px) {
+      width: 183px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    @media (max-width: 375px) {
+      width: 183px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .left__line__app img {
+    @media (max-width: 576px) {
+      width: 350px;
+    }
+    @media (max-width: 375px) {
+      width: 300px;
+    }
+  }
+
+  .left__button__app {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      padding-left: 90px;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+      padding-left: 60px;
+    }
+  }
+
+  .left__button {
+    background: linear-gradient(180deg, #161c24 0%, #000000 100%);
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    gap: 20px;
+
+    @media (max-width: 576px) {
+      width: 70%;
+    }
+
+    @media (max-width: 375px) {
+      width: 70%;
+    }
+  }
+
+  .apple__store__app {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px 0 10px;
+    gap: 13px;
+  }
+
+  .apple__store__app img {
+    padding-bottom: 5px;
+  }
+
+  .right__button__app {
+    background: linear-gradient(180deg, #161c24 0%, #000000 100%);
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+
+    @media (max-width: 576px) {
+      width: 70%;
+    }
+
+    @media (max-width: 375px) {
+      width: 70%;
+    }
+  }
+
+  .google__play__app {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px 0 10px;
+    gap: 13px;
+  }
+
+  .title__apple__google {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $white;
+    opacity: 0.72;
+  }
+
+  .text__apple__google {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: $white;
+  }
+
+  .right__app img {
+    @media (max-width: 576px) {
+      width: 370px;
+      height: 452.32px;
+      margin-top: 50px;
+    }
+    @media (max-width: 375px) {
+      width: 370px;
+      height: 452.32px;
+      margin-top: 50px;
+    }
+  }
+}

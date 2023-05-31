@@ -17,8 +17,7 @@
     "free": "Free",
     "online": "Online",
     "courses": "Courses",
-    "from": "From",
-    "expert": "The Experts",
+    "from": "From The Experts",
     "learn": "Learners",
     "graduates": "Graduates",
     "watch": "Watch Video",
@@ -26,5 +25,22 @@
   },
   "work": {
     "title": "We Work With"
+  },
+  "app": {
+    "downloadApp": "Download App",
+    "scanQR": "Scan QR code to install on your device",
+    "downloadOn": "Download on the",
+    "downloadFrom": "Download from"
+  },
+  "register": {
+    "registerNow": "Register Now Forget 20% Discount Every Courses",
+    "button": "Register"
+  },
+  "footer": {
+    "bigText": " The starting point for your next project based on  easy-to-customize Material-UI © helps you build apps faster and  better.",
+    "emailAddress": "Email address",
+    "rightsReserved": "© 2021. All rights reserved",
+    "helpCenter": "Help Center",
+    "termsService": "Terms of Service"
   }
 }
