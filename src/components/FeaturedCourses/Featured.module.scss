@@ -1,0 +1,161 @@
+@import "../../styles/variables.scss";
+.featured {
+    height: 1099px;
+    width: 100%;
+  .paragraph {
+    p {
+      color: $mainTextDMLight;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+}
+
+.featured__card {
+  display: flex;
+  flex-direction: column;
+  width: 362px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+  border-radius: 16px;
+  b {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $mainTextDark;
+  }
+  .top__card_img {
+    .card__img {
+      border-radius: 16px;
+      height: 350px;
+    }
+    .forbtn {
+      padding: 1px 8px;
+      .card__btn {
+        position: relative;
+        left: 2%;
+        top: -345px;
+        padding: 1px 8px;
+        background-color: #ffc81a;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: $mainTextDark;
+      }
+    }
+  }
+  .bottom__management_price,
+  .bottom__dont_waste,
+  .card__result,
+  .card__peaple,
+  .card__clock,
+  .card__rating {
+    display: flex;
+    align-items: center;
+  }
+  .card__content_bottom {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    .bottom__management_price {
+      justify-content: space-between;
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: $mainTextDark;
+      }
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: $orangered;
+      }
+    }
+    .bottom__dont_waste {
+      margin-top: 32px;
+      h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $mainTextDark;
+      }
+    }
+    .card__result {
+      margin-top: 25px;
+      gap: 12px;
+      .result__gap,
+      .card__students {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        h4 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 28px;
+          color: $mainTextDark;
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+          color: $mainTextDark;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 26px;
+          color: $mainTextDMLight;
+        }
+      }
+      hr {
+        width: 1px;
+        height: 20px;
+        color: $mainTextDMLight;
+      }
+    }
+    .card__peaple {
+      margin-top: 32px;
+      gap: 4px;
+      margin-bottom: 31px;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: $mainTextDMLight;
+      }
+    }
+    .card__clock,
+    .card__rating {
+      gap: 8px;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: $mainTextDMLight;
+      }
+    }
+  }
+  .dashed__hr {
+    border: 1px dashed $mainTextLight;
+  }
+}
