@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 import WeWork from "../components/wework/wework";
 import ThirdBlock from "../components/thirdBlock/thirdBlock";
 import AppBlock from "../components/appBlock/downApp";
+import Teachers from "../components/teachers/teachers";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Main />
       <WeWork />
       <ThirdBlock />
+      <Teachers />
       <AppBlock />
       <RegisterNow />
       <Footer />
