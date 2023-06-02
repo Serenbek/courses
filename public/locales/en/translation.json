@@ -26,6 +26,11 @@
   "work": {
     "title": "We Work With"
   },
+  "teachers": {
+    "meetTeachers": "Meet Our Teachers",
+    "sisince": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
+    "viewAll": "View All Teachers"
+  },
   "app": {
     "downloadApp": "Download App",
     "scanQR": "Scan QR code to install on your device",
