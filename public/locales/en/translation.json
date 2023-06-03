@@ -47,5 +47,20 @@
     "rightsReserved": "© 2021. All rights reserved",
     "helpCenter": "Help Center",
     "termsService": "Terms of Service"
+  },
+  "featured":{
+    "courses":"Featured Courses",
+    "management":"MANAGEMENT",
+    "title":"Don't Waste Time! 7 Facts Until You Reach Your Event",
+    "name1": "Bessie Cooper",
+    "title2":"The 7 Most Successful Event Companies In Region",
+    "name2": "Annette Black",
+    "btntext": "BEST SELLER",
+    "title3":"Think Your Event Is Safe? 7 Ways You Can Lose It Today",
+    "name3": "Brooklyn Simmons",
+    "teacher": "+10 teachers",
+    "student":"students",
+    "beginner":"Beginner",
+    "hours":"100 hours"
   }
 }

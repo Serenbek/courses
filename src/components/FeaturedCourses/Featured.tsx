@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import Slider from "react-slick";
 import styles from "./Featured.module.scss";
 import { Typography } from "@mui/material";
 import Devider from "../../devider/Devider";
@@ -9,13 +10,20 @@ import rating from "../../assets/images/featured/ic_skill_level_intermediate.svg
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FeaturedArr } from "../../constants/featured";
-import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import prev from "../../assets/images/featured/prev.svg";
+import next from "../../assets/images/featured/next.svg";
+import { Button } from "@mui/material";
+import { useRef } from "react";
+
 const Featured = () => {
   const { t } = useTranslation();
+  const arrowRef = useRef<Slider>(null);
   const renderCard = useMemo(
     () =>
       FeaturedArr.map((item, index) => (
-        <div className={styles.featured__card} key={`${item.bg}_${index}`}>
+        <div className={styles.featured__card} key={`${item.bg}_${index}_${item.teacher}`}>
           <div className={styles.top__card_img}>
             <img
               className={styles.card__img}
@@ -23,13 +31,19 @@ const Featured = () => {
               alt="vertical__icon"
             />
             <div className={styles.forbtn}>
-              <button className={styles.card__btn}>{item.btntext}</button>
+              <button
+                className={
+                  item.btntext ? styles.card__btn : styles.card__btn__none
+                }
+              >
+                {item.btntext}
+              </button>
             </div>
           </div>
           <div className={styles.card__content_bottom}>
             <div className={styles.bottom__management_price}>
               <Typography variant="subtitle1" component="a">
-                MANAGEMENT
+               {t("featured.management")}
               </Typography>
               <div
                 style={{ display: "flex", gap: "4px" }}
@@ -39,13 +53,13 @@ const Featured = () => {
                   variant="h1"
                   style={{ color: "#919EAB", textDecoration: "line-through" }}
                 >
-                  {item.newprice}
+                  {t(item.newprice)}
                 </Typography>
-                <Typography variant="h1"> {item.price}</Typography>
+                <Typography variant="h1"> {t(item.price)}</Typography>
               </div>
             </div>
             <div className={styles.bottom__dont_waste}>
-              <Typography variant="h2">{item.title}</Typography>
+              <Typography variant="h2">{t(item.title)}</Typography>
             </div>
             <div className={styles.card__result}>
               <div className={styles.result__gap}>
@@ -59,18 +73,17 @@ const Featured = () => {
               <div className={styles.card__students}>
                 <Typography variant="h4">180k</Typography>
                 <Typography variant="subtitle2" component="b">
-                  {" "}
-                  students
+                {t("featured.student")}
                 </Typography>
               </div>
             </div>
             <div className={styles.card__peaple}>
               <img src={avatar} alt="card__avatar" />
               <Typography variant="subtitle2" component="b">
-                {item.name}
+              {item.name && t(item.name)}
               </Typography>
               <Typography variant="subtitle2" component="p">
-                {item.teacher}
+              {item.teacher && t(item.teacher)}
               </Typography>
             </div>
             <hr className={styles.dashed__hr} />
@@ -78,13 +91,13 @@ const Featured = () => {
               <div className={styles.card__clock}>
                 <img src={clock} alt="clock" />
                 <Typography variant="subtitle2" component="p">
-                  100 hours
+                {t("featured.hours")}
                 </Typography>
               </div>
               <div className={styles.card__rating}>
                 <img src={rating} alt="rating" />
                 <Typography variant="subtitle2" component="p">
-                  Beginner
+                  {t("featured.beginner")}
                 </Typography>
               </div>
             </div>
@@ -94,27 +107,56 @@ const Featured = () => {
     [t]
   );
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        },
+      },
+    ],
   };
+
   return (
     <div className={styles.featured}>
       <div className="container">
-        <div className={styles.paragraph}>
-          <Devider text="Featured Courses" />
-          <Typography variant="subtitle1" component="p">
-            Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet
-            iaculis.
-          </Typography>
-        </div>
-        <div className={styles.cards}>
-          <Slider  {...settings}>
-            {renderCard}
-          </Slider>
+        <div className={styles.main__slider}>
+          <div className={styles.paragraph}>
+            <div className={styles.paragraph__under}>
+              <Devider text="Featured Courses" />
+              <Typography variant="subtitle1" component="p">
+                Nullam accumsan lorem in dui. Praesent ac massa at ligula
+                laoreet iaculis.
+              </Typography>
+            </div>
+            <div className={styles.buttons}>
+              <button
+                className={styles.prev}
+                onClick={() => arrowRef.current?.slickPrev()}
+              >
+                <img src={prev} alt="Prev arrow" />
+              </button>
+              <button
+                className={styles.next}
+                onClick={() => arrowRef.current?.slickNext()}
+              >
+                <img src={next} alt="Next arrow" />
+              </button>
+            </div>
+          </div>
+          <div className={styles.cards}>
+            <Slider ref={arrowRef} {...settings}>
+              {renderCard}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
