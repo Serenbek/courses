@@ -47,5 +47,15 @@
     "rightsReserved": "© 2021. All rights reserved",
     "helpCenter": "Help Center",
     "termsService": "Terms of Service"
+  },
+  "featured":{
+    "category": "Featured Category",
+    "python": "Python",
+    "management": "Management",
+    "webDevelopment": "Web Development",
+    "photoshop": "Photoshop",
+    "machineLearning": "Machine Learning",
+    "cyberSecurity": "Cyber Security",
+    "marketing": "Marketing"
   }
 }

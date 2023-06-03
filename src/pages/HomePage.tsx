@@ -6,6 +6,7 @@ import WeWork from "../components/wework/wework";
 import ThirdBlock from "../components/thirdBlock/thirdBlock";
 import AppBlock from "../components/appBlock/downApp";
 import Teachers from "../components/teachers/teachers";
+import FeaturedCategory from "../components/FeaturedCategory/FeaturedCategory";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Main />
       <WeWork />
       <ThirdBlock />
+      <FeaturedCategory/>
       <Teachers />
       <AppBlock />
       <RegisterNow />

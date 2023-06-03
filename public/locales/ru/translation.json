@@ -47,5 +47,15 @@
     "rightsReserved": "© 2021. Все права защищены.",
     "helpCenter": "Центр помощи",
     "termsService": "Условия использования"
+  },
+  "featured":{
+    "category": "Избранные категории",
+    "python": "Питон",
+    "management": "Управление",
+    "webDevelopment": "Веб-разработка",
+    "photoshop": "Фотошоп",
+    "machineLearning": "Машинное обучение",
+    "cyberSecurity": "Техническая безопасность",
+    "marketing": "Маркетинг"
   }
 }
