@@ -20,14 +20,14 @@ padding: 90px 0;
     width: 40%;
 
     h2 {
-      width: 368px;
+      width: 50%;
       font-weight: 700;
       font-size: 48px;
       line-height: 64px;
       height: 128px;
     }
     p {
-      width: 340px;
+      width: 70%;
       height: 84px;
       font-weight: 400;
       font-size: 16px;
@@ -36,14 +36,14 @@ padding: 90px 0;
       margin-top: 24px;
     }
     button {
-      width: 145.5px;
+      width: 30%;
       height: 48px;
       margin-top: 40px;
       p {
+        width: 100%;
         font-weight: 600;
         padding-top: 16px;
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 13px;
         color: #ffffff;
         margin-left: 0;
       }
@@ -127,7 +127,14 @@ padding: 90px 0;
         text-align: center;
       }
       p{
+        width: 100%;
         text-align: center;
+      }
+      button{
+        width: 65%;
+        p{
+
+        }
       }
     }
 
@@ -164,13 +171,16 @@ padding: 90px 0;
         text-align: center;
       }
       p {
-        width: 300px;
+        width: 70%;
         height: 84px;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
         color: #637381;
         text-align: center;
+      }
+      button{
+        width: 40%;
       }
     }
     .right {
@@ -193,7 +203,7 @@ padding: 90px 0;
           }
 
           p {
-            width: 111.5px;
+            width: 50%;
             height: 48px;
             font-weight: 400;
             font-size: 13px;
