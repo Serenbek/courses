@@ -50,7 +50,7 @@
   },
   "featured":{
     "courses":"Featured Courses",
-    "management":"MANAGEMENT",
+    "management1":"MANAGEMENT",
     "title":"Don't Waste Time! 7 Facts Until You Reach Your Event",
     "name1": "Bessie Cooper",
     "title2":"The 7 Most Successful Event Companies In Region",
@@ -61,6 +61,14 @@
     "teacher": "+10 teachers",
     "student":"students",
     "beginner":"Beginner",
-    "hours":"100 hours"
+    "hours":"100 hours",
+    "category": "Featured Category",
+    "python": "Python",
+    "management": "Management",
+    "webDevelopment": "Web Development",
+    "photoshop": "Photoshop",
+    "machineLearning": "Machine Learning",
+    "cyberSecurity": "Cyber Security",
+    "marketing": "Marketing"
   }
 }

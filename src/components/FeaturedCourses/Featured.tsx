@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import styles from "./Featured.module.scss";
 import { Typography } from "@mui/material";
@@ -23,7 +22,7 @@ const Featured = () => {
   const renderCard = useMemo(
     () =>
       FeaturedArr.map((item, index) => (
-        <div className={styles.featured__card} key={`${item.bg}_${index}_${item.teacher}`}>
+        <div className={styles.featured__card} key={`${item.bg}_${index}`}>
           <div className={styles.top__card_img}>
             <img
               className={styles.card__img}
@@ -43,7 +42,7 @@ const Featured = () => {
           <div className={styles.card__content_bottom}>
             <div className={styles.bottom__management_price}>
               <Typography variant="subtitle1" component="a">
-               {t("featured.management")}
+               {t("featured.management1")}
               </Typography>
               <div
                 style={{ display: "flex", gap: "4px" }}
