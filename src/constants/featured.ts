@@ -18,7 +18,7 @@ export const FeaturedArr = [
   },
   {
     bg: bg3,
-    btntext: "",
+    btntext: "BEST SELLER",
     price: " $59",
     title: "featured.title3",
     newprice: "$99",
@@ -41,7 +41,7 @@ export const FeaturedArr = [
   },
   {
     bg: bg3,
-    btntext: "",
+    btntext: "BEST SELLER",
     price: " $59",
     title: "featured.title3",
     newprice: "$99",
@@ -64,7 +64,7 @@ export const FeaturedArr = [
   },
   {
     bg: bg3,
-    btntext: "",
+    btntext: "BEST SELLER",
     price: " $59",
     title: "featured.title3",
     newprice: "$99",

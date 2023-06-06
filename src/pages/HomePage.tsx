@@ -8,20 +8,24 @@ import AppBlock from "../components/appBlock/downApp";
 import Teachers from "../components/teachers/teachers";
 import Featured from "../components/FeaturedCourses/Featured";
 import FeaturedCategory from "../components/FeaturedCategory/FeaturedCategory";
+import Vertical from "../components/VerticalCard/Vertical";
+import LatestPosts from "../components/LatestPosts/LatePosts";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+     <Header />
       <Main />
       <WeWork />
-      <ThirdBlock />
       <Featured/>
-      <FeaturedCategory/>
+      <LatestPosts/>
+      <ThirdBlock />
+      {/* <FeaturedCategory/> */}
       <Teachers />
       <AppBlock />
       <RegisterNow />
-      <Footer />
+      <Footer /> 
+    
     </>
   );
 };
