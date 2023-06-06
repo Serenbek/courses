@@ -1,8 +1,11 @@
 @import "../../styles/variables.scss";
 .featured {
-    height: 1099px;
-    width: 100%;
+  height: 1099px;
+  width: 100%;
   .paragraph {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
     p {
       color: $mainTextDMLight;
       font-style: normal;
@@ -10,18 +13,41 @@
       font-size: 16px;
       line-height: 28px;
     }
+    .buttons {
+      display: flex;
+      gap: 40px;
+      .prev {
+        background: transparent;
+      }
+      .next {
+        background: transparent;
+      }
+    }
   }
-  .cards{
-    display: flex;
-    justify-content: space-between;
+  .cards {
     margin-top: 80px;
+    :global {
+      .slick-prev {
+        left: 0;
+        z-index: 10;
+        &:before {
+          content: url(../../assets/images/featured/prev.svg) !important;
+        }
+      }
+      .slick-next {
+        right: 0;
+        &:before {
+          content: url(../../assets/images/featured/next.svg) !important;
+        }
+      }
+    }
   }
 }
 
 .featured__card {
   display: flex;
   flex-direction: column;
-  width: 362px;
+  width: 100%;
   height: auto;
   background: #ffffff;
   box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
@@ -33,24 +59,34 @@
     color: $mainTextDark;
   }
   .top__card_img {
+    position: relative;
     .card__img {
-      border-radius: 16px;
+      border-radius: 18px;
       height: 350px;
+      @media (max-width: 576px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+         justify-content: space-around;
+      
+      }
     }
     .forbtn {
-      padding: 1px 8px;
+      position: absolute;
+      top: 13px;
+      left: 12px;
       .card__btn {
-        position: relative;
-        left: 2%;
-        top: -345px;
-        padding: 1px 8px;
         background-color: #ffc81a;
         border-radius: 6px;
+        padding: 1px 8px;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 20px;
         color: $mainTextDark;
+      }
+      .card__btn__none {
+        display: none;
       }
     }
   }
@@ -68,6 +104,7 @@
     padding-right: 24px;
     padding-top: 32px;
     padding-bottom: 24px;
+    width: 85%;
     .bottom__management_price {
       justify-content: space-between;
       h1 {
@@ -157,5 +194,33 @@
   }
   .dashed__hr {
     border: 1px dashed $mainTextLight;
+  }
+}
+
+@media (max-width: 576px) {
+   .paragraph {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px !important;
+  }
+  .buttons {
+    display: none !important;
+  }
+  .paragraph__under{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 24px;
+  }
+  .cards{
+    display: -ms-grid;
+    grid-gap: 20px;
+    width: 100%;
+
+  }
+  .card__content_bottom{
+    width: 100% !important;
   }
 }

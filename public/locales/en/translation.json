@@ -49,6 +49,19 @@
     "termsService": "Terms of Service"
   },
   "featured":{
+    "courses":"Featured Courses",
+    "management1":"MANAGEMENT",
+    "title":"Don't Waste Time! 7 Facts Until You Reach Your Event",
+    "name1": "Bessie Cooper",
+    "title2":"The 7 Most Successful Event Companies In Region",
+    "name2": "Annette Black",
+    "btntext": "BEST SELLER",
+    "title3":"Think Your Event Is Safe? 7 Ways You Can Lose It Today",
+    "name3": "Brooklyn Simmons",
+    "teacher": "+10 teachers",
+    "student":"students",
+    "beginner":"Beginner",
+    "hours":"100 hours",
     "category": "Featured Category",
     "python": "Python",
     "management": "Management",
@@ -72,5 +85,13 @@
     "quizzes":"89 Quizzes",
     "graphic":"Graphic Design & Illustration",
     "master":"Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!"
+},
+  "latest":{
+     "text":"The 7 Best Things About Event",
+     "text2":"Event Is Your Worst Enemy. 7 Ways To Defeat It",
+     "text3":"Thinking About Event? 7 Reasons Why It's ...",
+     "title":"Moment in the life of any aspiring astronomer of that it is time to.",
+     "name1":"Arlene McCoy",
+     "name2":"Cody Fisher",
+     "name3":"Marvin McKinney"
   }
-}
