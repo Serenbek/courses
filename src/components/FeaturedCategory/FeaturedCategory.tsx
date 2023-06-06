@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 
 function FeaturedCategory() {
   const { t } = useTranslation();
-
   return (
     <div className="container">
       <div className={scss.wrapper}>

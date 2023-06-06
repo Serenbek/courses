@@ -6,20 +6,26 @@ import WeWork from "../components/wework/wework";
 import ThirdBlock from "../components/thirdBlock/thirdBlock";
 import AppBlock from "../components/appBlock/downApp";
 import Teachers from "../components/teachers/teachers";
+import Featured from "../components/FeaturedCourses/Featured";
 import FeaturedCategory from "../components/FeaturedCategory/FeaturedCategory";
+import Vertical from "../components/VerticalCard/Vertical";
+import LatestPosts from "../components/LatestPosts/LatePosts";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+     <Header />
       <Main />
       <WeWork />
+      <Featured/>
+      <LatestPosts/>
       <ThirdBlock />
-      <FeaturedCategory/>
+      {/* <FeaturedCategory/> */}
       <Teachers />
       <AppBlock />
       <RegisterNow />
-      <Footer />
+      <Footer /> 
+    
     </>
   );
 };
