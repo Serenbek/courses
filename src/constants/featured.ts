@@ -30,7 +30,7 @@ export const FeaturedArr = [
     price: " $39",
     title: "featured.title",
     newprice: "",
-    name1: "featured.name",
+    name: "featured.name1",
   },
   {
     bg: bg2,
@@ -53,7 +53,7 @@ export const FeaturedArr = [
     price: " $39",
     title: "featured.title",
     newprice: "",
-    name: "featured.name",
+    name: "featured.name1",
   },
   {
     bg: bg2,

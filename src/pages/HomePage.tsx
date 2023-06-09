@@ -10,23 +10,37 @@ import Featured from "../components/FeaturedCourses/Featured";
 import FeaturedCategory from "../components/FeaturedCategory/FeaturedCategory";
 import Vertical from "../components/VerticalCard/Vertical";
 import LatestPosts from "../components/LatestPosts/LatePosts";
-
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 const HomePage = () => {
+  const darkTheme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+  });
+  
+  const lightTheme = createTheme({
+    palette: {
+      mode: "light",
+    },
+  });
+
+
   return (
-    <>
+    <ThemeProvider  theme={darkTheme }>
+      <CssBaseline />
      <Header />
       <Main />
       <WeWork />
-      <Featured/>
-      <LatestPosts/>
       <ThirdBlock />
-      {/* <FeaturedCategory/> */}
+      <Featured/>  
+      <FeaturedCategory/>
       <Teachers />
+      <LatestPosts/>
       <AppBlock />
       <RegisterNow />
       <Footer /> 
-    
-    </>
+    </ThemeProvider>
   );
 };
 

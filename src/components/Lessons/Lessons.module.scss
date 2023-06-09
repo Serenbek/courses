@@ -1,0 +1,26 @@
+.lesson{
+    height: 2175px;
+    width: 100%;
+.lessons__left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 70%;
+    .wrapper__locations {
+        display: flex;
+        text-align: start;
+        color: #919eab;
+        font-weight: 400;
+        font-family: "Poppins";
+        font-size: 14px;
+        line-height: 26px;
+        width: 100%;
+        height: 60px;
+        background: rgba(145, 158, 171, 0.08);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+      }
+}
+}
+
