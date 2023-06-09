@@ -79,5 +79,17 @@
      "name1":"Arlene McCoy",
      "name2":"Cody Fisher",
      "name3":"Marvin McKinney"
+  },
+  "gettouch":{
+    "title":"Get In Touch",
+    "descrip":"We'd love to talk about how we can help you.",
+    "drop": "Drop us a line",
+    "descrip2":"We normally respond within 2 business days",
+    "name": "name",
+    "email":"email",
+    "subject":"subject",
+    "message":"message",
+    "text": "Send Message"
+    
   }
 }
