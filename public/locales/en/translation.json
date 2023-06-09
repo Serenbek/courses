@@ -71,6 +71,21 @@
     "cyberSecurity": "Cyber Security",
     "marketing": "Marketing"
   },
+  "complete":{
+    "complete":"The Complete Digital Marketing Course - 12 Courses in 1",
+    "best":"BEST SELLER",
+    "desigin":"DESIGN",
+    "desigin2":"Desigin",
+    "reviews":" 10,355 reviews",
+    "students":"students",
+    "hours":"100 hours",
+    "allLevels":"All Levels",
+    "lessons":"89 Lessons",
+    "english":"English",
+    "quizzes":"89 Quizzes",
+    "graphic":"Graphic Design & Illustration",
+    "master":"Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!"
+},
   "latest":{
      "text":"The 7 Best Things About Event",
      "text2":"Event Is Your Worst Enemy. 7 Ways To Defeat It",
@@ -80,4 +95,3 @@
      "name2":"Cody Fisher",
      "name3":"Marvin McKinney"
   }
-}
