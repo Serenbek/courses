@@ -27,7 +27,7 @@ const HomePage = () => {
 
 
   return (
-    <ThemeProvider  theme={lightTheme }>
+    <ThemeProvider  theme={darkTheme }>
       <CssBaseline />
      <Header />
       <Main />
